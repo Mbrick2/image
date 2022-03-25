@@ -13,3 +13,8 @@ if (hash) {
     image.style.margin = "auto";
     document.body.appendChild(image);
 }
+
+function generateUrl() {
+    let res = document.getElementById('result').innerHTML();
+    let in = document.getElementById('input').value
+}
