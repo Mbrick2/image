@@ -14,7 +14,23 @@ if (hash) {
     document.body.appendChild(image);
 }
 
-function generateUrl() {
-    let res = document.getElementById('result').innerHTML();
-    let in = document.getElementById('input').value
+function ini() {
+    let input = document.getElementById('input').value;
+    document.getElementById('result').innerHTML = generateUrl(input);
+}
+        
+function generateUrl(url) {
+    if (text.includes("https://"))
+       let code = url.split("/")[5];
+    } else {
+       let code = url.split("/")[3];
+    }
+    
+    return code;
+}
+
+function check() {
+    if (location.hostname !== "chiroyce1.github.io" || location.hostname !== "mbrick2.github.io" ) { /// Add your own Github Pages URL for testing
+        document.getElementById('cont').style.display = 'none';
+    }
 }
