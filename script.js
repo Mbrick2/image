@@ -14,24 +14,3 @@ if (hash) {
     document.body.appendChild(image);
 }
 
-function ini() {
-    let input = document.getElementById('input').value;
-    document.getElementById('result').innerHTML = generateUrl(input);
-}
-        
-function generateUrl(url) {
-    if (text.includes("https://"))
-       let code = url.split("/")[5];
-    } else {
-       let code = url.split("/")[3];
-    }
-    code = 'https://chiroyce1.github.io/image#${code}';
-    console.log(code);
-    return code;
-}
-
-function check() {
-    if (location.hostname !== "chiroyce1.github.io" || location.hostname !== "mbrick2.github.io" ) { /// Add your own Github Pages URL for testing
-        document.getElementById('cont').style.display = 'none';
-    }
-}
