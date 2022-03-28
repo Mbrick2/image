@@ -25,7 +25,7 @@ function generateUrl(url) {
     } else {
        let code = url.split("/")[3];
     }
-    
+    code = 'https://chiroyce1.github.io/image#${code}'
     return code;
 }
 
